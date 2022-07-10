@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cartão de Visitas</string>
+    <string name="business_card">Cartões de Visitas</string>
+    <string name="button_content_description">Adicionar cartão de visita</string>
+    <string name="new_card">New card</string>
+    <string name="add_name">Name</string>
+    <string name="add_company">Company</string>
+    <string name="add_color">Color</string>
+    <string name="save_card">Save</string>
+    <string name="close_activity">Fechar tela</string>
+</resources>

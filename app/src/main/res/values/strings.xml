@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <string name="business_card">Business Cards</string>
+    <string name="button_content_description">Add business card</string>
+    <string name="new_card">New card</string>
+    <string name="add_name">Name</string>
+    <string name="add_cellphone">Cellphone</string>
+    <string name="add_email">Email</string>
+    <string name="add_company">Company</string>
+    <string name="add_color">Color</string>
+    <string name="save_card">Save</string>
+    <string name="close_activity">Fechar tela</string>
+</resources>
