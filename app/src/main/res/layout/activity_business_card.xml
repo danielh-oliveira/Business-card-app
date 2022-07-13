@@ -20,6 +20,7 @@
 
     <!-- item count é o numero de itens que podem ser exibitos para o cliente-->
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cards"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="16dp"
@@ -27,6 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
         tools:itemCount="8"
+        tools:layout_editor_absoluteX="16dp"
         tools:listitem="@layout/item_business_card" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -14,19 +14,21 @@ class BusinessCardActivity : AppCompatActivity() {
     private val businessCardViewModel: BusinessCardViewModel by viewModels {
         BusinessCardViewModelFactory((application as App).repository)
     }
+    private val adapter by lazy { BusinessCardAdapter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.rvCards.adapter = adapter
         getAllBusinessCards()
         insertListener()
     }
 
     private fun getAllBusinessCards() {
-//        businessCardViewModel.getAll().observe(this, { card ->
-//
-//        })
+        businessCardViewModel.getAll().observe(this){ businessCards ->
+            adapter.submitList(businessCards)
+        }
     }
 
     private fun insertListener() {
