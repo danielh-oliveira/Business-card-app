@@ -7,10 +7,15 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import br.com.daniel.cartaovisitas.App
 import br.com.daniel.cartaovisitas.databinding.ActivityBusinessCardBinding
+import br.com.dio.businesscard.util.Image
 
 
 class BusinessCardActivity : AppCompatActivity() {
-    private val binding: ActivityBusinessCardBinding by lazy { ActivityBusinessCardBinding.inflate(LayoutInflater.from(this)) }
+    private val binding: ActivityBusinessCardBinding by lazy {
+        ActivityBusinessCardBinding.inflate(
+            LayoutInflater.from(this)
+        )
+    }
     private val businessCardViewModel: BusinessCardViewModel by viewModels {
         BusinessCardViewModelFactory((application as App).repository)
     }
@@ -26,7 +31,7 @@ class BusinessCardActivity : AppCompatActivity() {
     }
 
     private fun getAllBusinessCards() {
-        businessCardViewModel.getAll().observe(this){ businessCards ->
+        businessCardViewModel.getAll().observe(this) { businessCards ->
             adapter.submitList(businessCards)
         }
     }
@@ -35,6 +40,9 @@ class BusinessCardActivity : AppCompatActivity() {
         binding.floatingActionButton.setOnClickListener {
             val intent = Intent(this, AddBusinessCardActivity::class.java)
             startActivity(intent)
+        }
+        adapter.listenerShare = { card ->
+            Image.share(this, card)
         }
     }
 }

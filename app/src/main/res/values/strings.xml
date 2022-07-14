@@ -9,5 +9,7 @@
     <string name="add_company">Company</string>
     <string name="add_color">Color</string>
     <string name="save_card">Save</string>
-    <string name="close_activity">Fechar tela</string>
+    <string name="close_activity">Close</string>
+    <string name="confirm_show_success">Card has been registered!</string>
+    <string name="share_to">Share</string>
 </resources>

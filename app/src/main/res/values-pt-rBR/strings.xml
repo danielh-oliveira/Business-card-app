@@ -3,10 +3,14 @@
     <string name="app_name">Cartão de Visitas</string>
     <string name="business_card">Cartões de Visitas</string>
     <string name="button_content_description">Adicionar cartão de visita</string>
-    <string name="new_card">New card</string>
-    <string name="add_name">Name</string>
-    <string name="add_company">Company</string>
-    <string name="add_color">Color</string>
-    <string name="save_card">Save</string>
+    <string name="new_card">Novo Cartão</string>
+    <string name="add_name">Nome</string>
+    <string name="add_cellphone">Celular</string>
+    <string name="add_email">E-mail</string>
+    <string name="add_company">Empresa</string>
+    <string name="add_color">Cor</string>
+    <string name="save_card">Salvar</string>
     <string name="close_activity">Fechar tela</string>
+    <string name="confirm_show_success">Cartão foi cadastrado!</string>
+    <string name="share_to">Compartilhar</string>
 </resources>
